@@ -9,6 +9,7 @@ Please note that I did not create most of the 3D assets or some of the textures 
 As for the VFX and Shaders, those were 100% created by me. You are completely allowed to use them in your own projects if you want to. There is no need to credit me (I really don't mind!), just use them to learn and make a great game bro...
 LeLu VFX. 2026
 
+version: Godot 4.7.2  (Forward+)
 
 📦 Third-Party Asset Credits:
 
