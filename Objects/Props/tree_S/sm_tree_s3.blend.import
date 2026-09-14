@@ -1,0 +1,81 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://ddl77en612wta"
+path="res://.godot/imported/sm_tree_s3.blend-52545f76a053e535060ed4eed58ab56a.scn"
+
+[deps]
+
+source_file="res://Objects/Props/tree_S/sm_tree_s3.blend"
+dest_files=["res://.godot/imported/sm_tree_s3.blend-52545f76a053e535060ed4eed58ab56a.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"m_branch": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Objects/Props/tree_S/m_branch_s3.tres",
+"use_external/path": "uid://d0h4pjfq6ejx6"
+},
+"m_leaf": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Objects/Props/tree_S/m_leaf_a_s3.tres",
+"use_external/path": "uid://dij20r7a1c3qf"
+},
+"m_trunk": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Objects/Props/tree_S/m_trunk_s3.tres",
+"use_external/path": "uid://ccsiy6q4h11ry"
+}
+}
+}
+blender/nodes/visible=0
+blender/nodes/active_collection_only=false
+blender/nodes/punctual_lights=true
+blender/nodes/cameras=true
+blender/nodes/custom_properties=true
+blender/nodes/modifiers=1
+blender/meshes/vertex_colors=1
+blender/meshes/uvs=true
+blender/meshes/normals=true
+blender/meshes/export_geometry_nodes_instances=false
+blender/meshes/gpu_instances=false
+blender/meshes/tangents=true
+blender/meshes/skins=2
+blender/meshes/export_bones_deforming_mesh_only=false
+blender/materials/unpack_enabled=true
+blender/materials/export_materials=1
+blender/animation/limit_playback=true
+blender/animation/always_sample=true
+blender/animation/group_tracks=true
+gltf/naming_version=2
+gltf/texture_map_mode=1

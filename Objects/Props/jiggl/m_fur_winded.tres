@@ -1,0 +1,28 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dbaj7slb12y3s"]
+
+[ext_resource type="Shader" uid="uid://hav4pfthu4t5" path="res://Objects/Props/jiggl/ss_grass_lambwarp.gdshader" id="1_sl1db"]
+
+[sub_resource type="Gradient" id="Gradient_njq20"]
+offsets = PackedFloat32Array(0.14285715, 0.36785713, 0.53571427, 0.74642855)
+colors = PackedColorArray(0.8352941, 0.53333336, 0.7372549, 1, 0.9529412, 0.8117647, 0.9098039, 1, 0.96862745, 0.8784314, 0.9411765, 1, 0.8352941, 0.53333336, 0.7372549, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ex7hu"]
+gradient = SubResource("Gradient_njq20")
+
+[sub_resource type="Gradient" id="Gradient_sl1db"]
+interpolation_color_space = 2
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_567fm"]
+gradient = SubResource("Gradient_sl1db")
+fill_from = Vector2(1, 1)
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_sl1db")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/alpha_scissor_threshold = 0.5
+shader_parameter/color_1D_gradient = SubResource("GradientTexture1D_ex7hu")
+shader_parameter/wind_speed_weight = 0.2
+shader_parameter/wind_strength_weight = 0.1
+shader_parameter/noise_scale = 1.0
+shader_parameter/sway_mask = SubResource("GradientTexture2D_567fm")

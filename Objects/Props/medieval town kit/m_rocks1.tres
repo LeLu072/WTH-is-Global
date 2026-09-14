@@ -1,0 +1,47 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cqf3eq7uog5af"]
+
+[ext_resource type="Shader" uid="uid://dc2wi6fnvxw1o" path="res://Objects/Props/medieval town kit/ss_triple_mate_vertex_global.gdshader" id="1_o5a6f"]
+[ext_resource type="Texture2D" uid="uid://d22xf3unwb16e" path="res://Misc/Textures/T_dirt_aerial_02_diff_2k.jpg" id="2_3vn4p"]
+[ext_resource type="Texture2D" uid="uid://dhxbhirsogugb" path="res://Misc/Textures/T_concrete_moss_diff_2k.jpg" id="3_wvfwq"]
+[ext_resource type="Texture2D" uid="uid://cr4ohfkmqfwsx" path="res://Objects/Props/medieval town kit/textures/Image_15.png" id="4_o5a6f"]
+[ext_resource type="Texture2D" uid="uid://bqxqbe4y5i2n2" path="res://Misc/Textures/T_snow_02_diff_2k.jpg" id="5_6oiqd"]
+[ext_resource type="Texture2D" uid="uid://dgmm5r3xneoux" path="res://Misc/Textures/T_dirt_aerial_02_nor_gl_2k.png" id="6_kh5co"]
+[ext_resource type="Texture2D" uid="uid://b5mgjonwf0fwk" path="res://Misc/Textures/T_concrete_moss_nor_gl_2k.png" id="7_wqvio"]
+[ext_resource type="Texture2D" uid="uid://c7ot0v2v55u2e" path="res://Objects/Props/medieval town kit/textures/Image_17.png" id="8_3vn4p"]
+[ext_resource type="Texture2D" uid="uid://cmxq4gvhgphq4" path="res://Misc/Textures/T_snow_02_nor_gl_2k.png" id="9_kk38t"]
+[ext_resource type="Texture2D" uid="uid://d0jxfruev2qe5" path="res://Misc/Textures/T_dirt_aerial_02_arm_2k.jpg" id="10_84ccl"]
+[ext_resource type="Texture2D" uid="uid://dypvgbotg7wrr" path="res://Misc/Textures/T_concrete_moss_arm_2k.jpg" id="11_4xn17"]
+[ext_resource type="Texture2D" uid="uid://cxp8ohcr20d10" path="res://Objects/Props/medieval town kit/textures/Image_16.png" id="12_wvfwq"]
+[ext_resource type="Texture2D" uid="uid://cyj8phkv0u0ef" path="res://Misc/Textures/T_snow_02_arm_2k.jpg" id="13_xgwb7"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_o5a6f")
+shader_parameter/Opacity_Layers = 1.0
+shader_parameter/UV_Scale_Base = Vector2(1, 1)
+shader_parameter/UV_Offset_Base = Vector2(0, 0)
+shader_parameter/TextureColor_Base = ExtResource("4_o5a6f")
+shader_parameter/TextureORM_Base = ExtResource("12_wvfwq")
+shader_parameter/TextureNormal_Base = ExtResource("8_3vn4p")
+shader_parameter/UV_Scale_A = Vector2(3, 3)
+shader_parameter/UV_Offset_A = Vector2(0, 0)
+shader_parameter/TextureColor_A = ExtResource("2_3vn4p")
+shader_parameter/TextureORM_A = ExtResource("10_84ccl")
+shader_parameter/TextureNormal_A = ExtResource("6_kh5co")
+shader_parameter/Opacity_A = 1.0
+shader_parameter/UV_Scale_B = Vector2(1, 1)
+shader_parameter/UV_Offset_B = Vector2(0, 0.22)
+shader_parameter/TextureColor_B = ExtResource("3_wvfwq")
+shader_parameter/TextureORM_B = ExtResource("11_4xn17")
+shader_parameter/TextureNormal_B = ExtResource("7_wqvio")
+shader_parameter/Opacity_B = 1.0
+shader_parameter/UV_Scale_C = Vector2(1, 1)
+shader_parameter/UV_Offset_C = Vector2(0, 0)
+shader_parameter/TextureColor_C = ExtResource("5_6oiqd")
+shader_parameter/TextureORM_C = ExtResource("13_xgwb7")
+shader_parameter/TextureNormal_C = ExtResource("9_kk38t")
+shader_parameter/Opacity_C = 1.0
+shader_parameter/NormalIntensity = -0.9999992874999996
+shader_parameter/AlphaScissor = 0.5
+shader_parameter/WetnessDarkening = 0.6
+shader_parameter/WetnessRoughness = 0.05

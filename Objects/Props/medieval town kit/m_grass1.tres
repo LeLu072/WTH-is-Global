@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bqpbicul7hmu"]
+
+[ext_resource type="Shader" uid="uid://bbki8bkknvfrl" path="res://Objects/Props/medieval town kit/ss_triple_mate_vertex_global.gdshader" id="1_88dew"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_88dew")
+shader_parameter/UV_Scale_Base = Vector2(1, 1)
+shader_parameter/UV_Offset_Base = Vector2(0, 0)
+shader_parameter/UV_Scale_A = Vector2(1, 1)
+shader_parameter/UV_Offset_A = Vector2(0, 0)
+shader_parameter/UV_Scale_B = Vector2(1, 1)
+shader_parameter/UV_Offset_B = Vector2(0, 0)
+shader_parameter/UV_Scale_C = Vector2(1, 1)
+shader_parameter/UV_Offset_C = Vector2(0, 0)
+shader_parameter/NormalIntensity = 1.0
+shader_parameter/AlphaScissor = 0.5
+shader_parameter/WetnessDarkening = 0.6
+shader_parameter/WetnessRoughness = 0.05

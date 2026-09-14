@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bi404p4cno7mj"]
+
+[ext_resource type="Texture2D" uid="uid://bc1mw6q8d6fdy" path="res://Objects/Props/jiggl/T_jiggy.png" id="1_v774j"]
+
+[resource]
+shading_mode = 0
+diffuse_mode = 2
+specular_mode = 1
+albedo_color = Color(0.8627451, 0.827451, 0.8627451, 1)
+albedo_texture = ExtResource("1_v774j")

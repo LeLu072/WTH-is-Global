@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ccsiy6q4h11ry"]
+
+[ext_resource type="Shader" uid="uid://d1iu5ltehsblv" path="res://Objects/Props/tree_S/ss_vegetation_directional_sway.gdshader" id="1_drnp6"]
+[ext_resource type="Texture2D" uid="uid://v4pn5a0akw1e" path="res://Objects/Props/old_tree/textures/T_trunk_col.png" id="2_g8o8e"]
+[ext_resource type="Texture2D" uid="uid://clboxktrog8d6" path="res://Objects/Props/old_tree/textures/T_trunk_N.png" id="3_nies2"]
+[ext_resource type="Texture2D" uid="uid://qdf8iisjth6e" path="res://Objects/Props/tree_S/textures/Bark roug.png" id="4_5uwdv"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_drnp6")
+shader_parameter/TextureColor = ExtResource("2_g8o8e")
+shader_parameter/TextureNormal = ExtResource("3_nies2")
+shader_parameter/TextureRoughness = ExtResource("4_5uwdv")
+shader_parameter/Specularity = 0.25999999418848
+shader_parameter/NormalIntensity = 1.0
+shader_parameter/AlphaScissor = 0.5
+shader_parameter/Fake_SSS_Intensity = 1.0
+shader_parameter/MixSSSTexture = 0.0

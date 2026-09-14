@@ -1,0 +1,29 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dij20r7a1c3qf"]
+
+[ext_resource type="Shader" uid="uid://cm8iihirr37rd" path="res://Objects/Props/tree_S/ss_vegetation_directional_sway.gdshader" id="1_bu7o1"]
+[ext_resource type="Texture2D" uid="uid://cmrvgmgiktha2" path="res://Objects/Props/tree_S/textures/T_Leaf_sss.png" id="2_sd8ay"]
+[ext_resource type="Texture2D" uid="uid://dfe2hs11432g8" path="res://Objects/Props/tree_S/textures/T_Leaf.png" id="3_ge5sl"]
+[ext_resource type="Texture2D" uid="uid://crf6kr0082wvu" path="res://Objects/Props/tree_S/textures/T_Leaf_nor2.png" id="4_xml5q"]
+[ext_resource type="Texture2D" uid="uid://b7eex0rxl6qxl" path="res://Objects/Props/tree_S/textures/T_Leaf_ORM_channels_G.png" id="5_cq3jt"]
+
+[sub_resource type="Gradient" id="Gradient_8fo8i"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_s7dfo"]
+gradient = SubResource("Gradient_8fo8i")
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_bu7o1")
+shader_parameter/TextureColor = ExtResource("3_ge5sl")
+shader_parameter/TextureNormal = ExtResource("4_xml5q")
+shader_parameter/TextureRoughness = ExtResource("5_cq3jt")
+shader_parameter/Specularity = 0.20999999530608
+shader_parameter/NormalIntensity = 1.0
+shader_parameter/AlphaScissor = 0.6070000288325
+shader_parameter/wind_speed_weight = 2.0
+shader_parameter/wind_strength_weight = 0.5
+shader_parameter/Fake_SSS_Intensity = 2.94
+shader_parameter/MixSSSTexture = 0.999999977648
+shader_parameter/FakeSSS_texture = ExtResource("2_sd8ay")
+shader_parameter/FakeSSSColorAndBaias = SubResource("GradientTexture1D_s7dfo")

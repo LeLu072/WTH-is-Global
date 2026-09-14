@@ -1,0 +1,26 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://d0h4pjfq6ejx6"]
+
+[ext_resource type="Shader" uid="uid://cm8iihirr37rd" path="res://Objects/Props/tree_S/ss_vegetation_directional_sway.gdshader" id="1_lbvp1"]
+[ext_resource type="Texture2D" uid="uid://con2ql7ubv6xe" path="res://Objects/Props/tree_S/textures/T_Branch.png" id="2_lbvp1"]
+[ext_resource type="Texture2D" uid="uid://ctpmajldacnc8" path="res://Objects/Props/tree_S/textures/T_Branch_N.png" id="3_x2lwi"]
+
+[sub_resource type="Gradient" id="Gradient_8evab"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.77, 0.77, 0.77, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_euipj"]
+gradient = SubResource("Gradient_8evab")
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_lbvp1")
+shader_parameter/TextureColor = ExtResource("2_lbvp1")
+shader_parameter/TextureNormal = ExtResource("3_x2lwi")
+shader_parameter/TextureRoughness = SubResource("GradientTexture1D_euipj")
+shader_parameter/Specularity = 0.08999999798832
+shader_parameter/NormalIntensity = 1.0
+shader_parameter/AlphaScissor = 0.3050000144875
+shader_parameter/wind_speed_weight = 0.7
+shader_parameter/wind_strength_weight = 1.0
+shader_parameter/Fake_SSS_Intensity = 10.0
+shader_parameter/MixSSSTexture = 0.0

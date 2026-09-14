@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://f7qlfl7j3f8r"]
+
+[ext_resource type="Texture2D" uid="uid://cg7i0vxcix5vk" path="res://Objects/Props/stuff_with_light_examples/Atlas111.png" id="1_2q3ku"]
+
+[resource]
+albedo_texture = ExtResource("1_2q3ku")
+roughness = 0.79

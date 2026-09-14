@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://trxwq14nprem"]
+
+[ext_resource type="Shader" uid="uid://15f5c7lti0qj" path="res://Objects/Props/grass_s3/ss_grass.gdshader" id="1_lo5kk"]
+[ext_resource type="Texture2D" uid="uid://pqon6p11a865" path="res://Objects/Props/grass_s3/T_Leaf_texture.png" id="2_dc3ic"]
+
+[sub_resource type="Gradient" id="Gradient_lo5kk"]
+interpolation_color_space = 2
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3uusv"]
+gradient = SubResource("Gradient_lo5kk")
+fill_from = Vector2(1, 1)
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_lo5kk")
+shader_parameter/albedo_texture = ExtResource("2_dc3ic")
+shader_parameter/albedo_color = Color(1, 1, 1, 1)
+shader_parameter/alpha_scissor_threshold = 0.5
+shader_parameter/wind_speed_weight = 0.04
+shader_parameter/wind_strength_weight = 0.1
+shader_parameter/noise_scale = 0.05
+shader_parameter/sway_mask = SubResource("GradientTexture2D_3uusv")
